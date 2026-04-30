@@ -1,0 +1,33 @@
+user:
+  name: "Your Full Name"
+  email: "you@example.com"
+  location: "City, Country"
+  linkedin_url: "https://linkedin.com/in/yourhandle"
+  linkedin_display: "linkedin.com/in/yourhandle"
+  portfolio_url: "https://yoursite.com"
+  portfolio_display: "yoursite.com"
+
+cv:
+  source: cv.md                  # path to your CV markdown file
+
+llm:
+  endpoint: http://127.0.0.1:11434/v1
+  model: qwen3:8b
+  thinking: true                 # enable Qwen3 thinking mode (recommended)
+  tool_calls: false              # default: Node orchestrates; set true to let Qwen drive tools
+  timeout_ms: 90000
+  max_retries: 1
+  temperature: 0.3
+
+pdf:
+  paper: a4                      # a4 or letter
+  page_margin: "0.6in"
+
+comp:
+  enabled: true                  # Block D scraping; --no-comp flag overrides
+  sources:
+    - glassdoor
+    - levelsfyi
+
+tracker:
+  file: data/applications.md

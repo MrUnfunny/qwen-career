@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": ["dimensions","overall","recommendation","one_liner","apply_if","skip_if"],
+  "properties": {
+    "dimensions": {
+      "type": "object",
+      "required": ["cv_match","level_fit","growth_potential","red_flags"],
+      "properties": {
+        "cv_match":          { "type": "number" },
+        "level_fit":         { "type": "number" },
+        "comp":              { "type": ["number","null"] },
+        "growth_potential":  { "type": "number" },
+        "red_flags":         { "type": "number" }
+      }
+    },
+    "overall":          { "type": "number", "minimum": 0, "maximum": 5 },
+    "recommendation":   { "type": "string", "enum": ["strong-apply","apply","borderline","skip"] },
+    "one_liner":        { "type": "string" },
+    "apply_if":         { "type": "string" },
+    "skip_if":          { "type": "string" }
+  }
+}

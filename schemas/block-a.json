@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["company","role","seniority","remote_policy","location","domain","function","key_responsibilities","must_have_skills","nice_to_have_skills","tl_dr"],
+  "properties": {
+    "company":              { "type": "string" },
+    "role":                 { "type": "string" },
+    "seniority":            { "type": "string" },
+    "remote_policy":        { "type": "string" },
+    "location":             { "type": "string" },
+    "team_size_hint":       { "type": "string" },
+    "domain":               { "type": "string" },
+    "function":             { "type": "string" },
+    "key_responsibilities": { "type": "array", "items": { "type": "string" } },
+    "must_have_skills":     { "type": "array", "items": { "type": "string" } },
+    "nice_to_have_skills":  { "type": "array", "items": { "type": "string" } },
+    "tl_dr":                { "type": "string" }
+  }
+}

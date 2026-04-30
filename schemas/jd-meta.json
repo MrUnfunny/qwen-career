@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": ["company", "role", "seniority", "location", "remote_policy", "team_size_hint", "domain"],
+  "properties": {
+    "company":        { "type": "string" },
+    "role":           { "type": "string" },
+    "seniority":      { "type": "string", "enum": ["junior","mid","senior","staff","principal","director","vp","unknown"] },
+    "location":       { "type": "string" },
+    "remote_policy":  { "type": "string", "enum": ["remote","hybrid","onsite","unknown"] },
+    "team_size_hint": { "type": "string" },
+    "domain":         { "type": "string" }
+  }
+}

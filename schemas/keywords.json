@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["keywords"],
+  "properties": {
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phrase","weight","inject_in"],
+        "properties": {
+          "phrase":     { "type": "string" },
+          "weight":     { "type": "number", "enum": [1, 2, 3] },
+          "inject_in":  { "type": "string", "enum": ["summary","competencies","experience","skills","multiple"] }
+        }
+      }
+    }
+  }
+}

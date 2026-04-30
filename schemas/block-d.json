@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": ["status","score","market_range_low","market_range_high","currency","interpretation","data_quality","sources_used","recommended_sources"],
+  "properties": {
+    "status":               { "type": "string", "enum": ["available","partial","unavailable"] },
+    "score":                { "type": ["number","null"], "minimum": 0, "maximum": 5 },
+    "market_range_low":     { "type": "string" },
+    "market_range_high":    { "type": "string" },
+    "currency":             { "type": "string" },
+    "interpretation":       { "type": "string" },
+    "data_quality":         { "type": "string", "enum": ["high","medium","low"] },
+    "sources_used":         { "type": "array", "items": { "type": "string" } },
+    "recommended_sources":  { "type": "array", "items": { "type": "string" } }
+  }
+}

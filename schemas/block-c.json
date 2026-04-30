@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": ["jd_level","candidate_level","level_alignment","sell_senior_plan","downlevel_plan","positioning_phrases","red_flags_to_address"],
+  "properties": {
+    "jd_level":              { "type": "string" },
+    "candidate_level":       { "type": "string" },
+    "level_alignment":       { "type": "string", "enum": ["good","stretch","overqualified","unknown"] },
+    "sell_senior_plan":      { "type": "string" },
+    "downlevel_plan":        { "type": "string" },
+    "positioning_phrases":   { "type": "array", "items": { "type": "string" } },
+    "red_flags_to_address":  { "type": "array", "items": { "type": "string" } }
+  }
+}

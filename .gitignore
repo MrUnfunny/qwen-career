@@ -1,0 +1,9 @@
+node_modules/
+output/
+jds/
+data/
+reports/
+config/profile.yml
+cv.md
+*.tmp
+.env
