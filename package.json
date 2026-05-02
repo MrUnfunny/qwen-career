@@ -5,11 +5,17 @@
   "description": "Job evaluation pipeline powered by local Qwen3:8B — no Claude, no cloud LLM",
   "scripts": {
     "doctor": "node doctor.mjs",
-    "eval": "node bin/evaluate.mjs"
+    "eval": "node bin/evaluate.mjs",
+    "discover": "node bin/discover.mjs",
+    "batch-eval": "node bin/batch-eval.mjs",
+    "review": "node bin/review.mjs",
+    "apply": "node bin/apply.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",
+    "better-sqlite3": "^12.9.0",
     "js-yaml": "^4.1.0",
+    "patchright": "^1.59.4",
     "playwright": "^1.49.0"
   }
 }

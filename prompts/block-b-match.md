@@ -29,3 +29,5 @@ Rules:
 - strengths: top 3 genuine strengths from the CV for this specific role.
 - critical_gaps: requirements with gap_severity=blocker or major.
 - nice_to_have_gaps: requirements with gap_severity=minor.
+- If the JD asks for previous internship, co-op, or practical software development experience, full-time software engineering experience is stronger evidence and should satisfy that requirement. Do not mark internship experience as a gap solely because the CV does not use the word "internship".
+- For new-grad or internship roles, separate eligibility constraints from capability matches. Full-time experience can create an overqualification or graduation-window concern, but it should not be treated as missing internship/practical experience.
